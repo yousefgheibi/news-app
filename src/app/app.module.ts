@@ -10,6 +10,7 @@ import { HomeComponent } from './home/home.component';
 import { SourcesComponent } from './sources/sources.component';
 import { FavoritesComponent } from './favorites/favorites.component';
 import { HeadlinesComponent } from './headlines/headlines.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { HeadlinesComponent } from './headlines/headlines.component';
     AppRoutingModule,
     BrowserAnimationsModule,
     MaterialModule,
-    FlexLayoutModule
+    FlexLayoutModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
