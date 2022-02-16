@@ -5,7 +5,6 @@
     <div fxShow="true" fxHide.lt-md="true">
       <a routerLink="" mat-button>Home</a>
       <a routerLink="headlines" mat-button>Headlines</a>
-      <a routerLink="sources" mat-button>Sources</a>
       <a routerLink="favorites" mat-button>favorites</a>
     </div>
 
@@ -19,11 +18,10 @@
       <div fxLayout="column">
      <a routerLink="" mat-button>Home</a>
       <a routerLink="headlines" mat-button>Headlines</a>
-      <a routerLink="sources" mat-button>Sources</a>
       <a routerLink="favorites" mat-button>favorites</a>
       </div>
     </mat-sidenav>
-    <!-- <mat-sidenav-content></mat-sidenav-content> -->
+    <mat-sidenav-content><router-outlet></router-outlet></mat-sidenav-content>
   </mat-sidenav-container>
 
-  <router-outlet></router-outlet>
+  <!-- <router-outlet></router-outlet> -->
