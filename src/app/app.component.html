@@ -3,10 +3,10 @@
     <span class="spacer"></span>
 
     <div fxShow="true" fxHide.lt-md="true">
-      <a mat-button>Home</a>
-      <a mat-button>Headlines</a>
-      <a mat-button>Sources</a>
-      <a mat-button>favorites</a>
+      <a routerLink="" mat-button>Home</a>
+      <a routerLink="headlines" mat-button>Headlines</a>
+      <a routerLink="sources" mat-button>Sources</a>
+      <a routerLink="favorites" mat-button>favorites</a>
     </div>
 
     <div fxShow="true" fxHide.gt-sm="true">
@@ -14,13 +14,16 @@
     </div>
   </mat-toolbar>
 
-  <mat-sidenav-container fxFlexFill class="example-container">
+  <mat-sidenav-container class="example-container">
     <mat-sidenav #sidenav fxLayout="column">
       <div fxLayout="column">
-        <a mat-button>Home</a>
-        <a mat-button>Headlines</a>
-        <a mat-button>Sources</a>
-        <a mat-button>favorites</a>
+     <a routerLink="" mat-button>Home</a>
+      <a routerLink="headlines" mat-button>Headlines</a>
+      <a routerLink="sources" mat-button>Sources</a>
+      <a routerLink="favorites" mat-button>favorites</a>
       </div>
     </mat-sidenav>
+    <!-- <mat-sidenav-content></mat-sidenav-content> -->
   </mat-sidenav-container>
+
+  <router-outlet></router-outlet>
