@@ -25,7 +25,7 @@ export class HeadlinesComponent implements OnInit {
     this.getCategoryData(this.categories[0]);
   }
 
-  OnGetCategoryData(category : string){
+  onGetCategoryData(category : string){
     console.log(category);
     this.getCategoryData(category);
   }
