@@ -19,4 +19,10 @@
             </mat-card>
         </div>
     </div>
+    <mat-paginator *ngIf="news" [length]="news.totalResults"
+              [pageSize]="pageSize"
+              (page)="onPageChange($event)"
+    >
+</mat-paginator>
+
 </div>
