@@ -1,3 +1,4 @@
+<mat-progress-bar *ngIf="!news" mode="indeterminate"></mat-progress-bar>
 <div class="container">
     <div class="row">
         <div class="col-md-12 pt-4 d-flex justify-content-center">
@@ -7,7 +8,7 @@
                </mat-chip-list>
         </div>
     </div>
-   <div class="row pt-5">
+   <div class="row pt-5" *ngIf="news">
     <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 mb-3" *ngFor="let article of news.articles">
         <mat-card>
             <img mat-card-image *ngIf="article.urlToImage" [src]="article.urlToImage">
