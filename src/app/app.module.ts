@@ -7,18 +7,12 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './material.module';
 import { HomeComponent } from './home/home.component';
-import { SourcesComponent } from './sources/sources.component';
-import { FavoritesComponent } from './favorites/favorites.component';
-import { HeadlinesComponent } from './headlines/headlines.component';
 import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    SourcesComponent,
-    FavoritesComponent,
-    HeadlinesComponent
   ],
   imports: [
     BrowserModule,
