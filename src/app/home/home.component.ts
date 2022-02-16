@@ -18,7 +18,7 @@ export class HomeComponent implements OnInit , OnDestroy {
   }
 
   getData(){
-   this.newsSubscription = this.newsService.getData('top-headlines?country=us&category=business').subscribe(data => {
+   this.newsSubscription = this.newsService.getData('top-headlines?country=us').subscribe(data => {
       this.news = data;
     })
   }
